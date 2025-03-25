@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 AI-Driven Hyper Personalization & Recommendations
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-Welcome to our **Hyper-Personalized Financial Recommendation System** —an AI-powered solution designed to deliver tailored financial product suggestions based on customer profiles, transaction history, and social media sentiment.
+Welcome to our **AI-Driven Hyper Personalization & Recommendations System** —an AI-powered solution designed to deliver tailored financial product suggestions based on customer profiles, transaction history, and social media sentiment.
 
 Our system leverages machine learning and natural language processing (NLP) to:
 
