@@ -25,6 +25,8 @@ A brief overview of your project and its purpose. Mention which problem statemen
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.
+
+## ⚙️ What It Does
 Our hyper-personalized recommendation system analyzes customer profiles, transaction histories, and social media sentiment to:
 
 Suggest tailored financial products (loans, investments, credit cards)
@@ -45,35 +47,93 @@ Adapts to severe class imbalances in the data
 
 Delivers API endpoints for easy integration
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
-
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Core Architecture
+Data Pipeline
+
+Automated loading/cleaning of multiple data sources
+
+Advanced feature engineering (numeric, categorical, text)
+
+Sentiment analysis integration
+
+Hybrid Recommendation Engine
+
+mermaid
+Copy
+graph TD
+  A[Customer Data] --> B[Feature Engineering]
+  B --> C[Gradient Boosting Classifier]
+  A --> D[Text Embeddings]
+  D --> C
+  C --> E[Calibration]
+  E --> F[Recommendations]
+Fairness Monitoring
+
+Continuous bias detection
+
+Protected attribute analysis
+
+Recommendation auditing
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+### 1. Data Imbalance
+
+1005 "general" vs 1-5 samples for specific products
+
+Solution: Implemented SMOTE + BalancedRandomForest
+
+### 2. Cold Start Problem
+
+New customers with minimal history
+
+Solution: Fallback to demographic-based rules
+
+### 3. Feature Integration
+
+Combining tabular data with text embeddings
+
+Solution: Custom pipeline with dimension alignment
+
+### 4. Real-time Performance
+
+Transformer model latency
+
+Solution: Caching + pre-computed embeddings
 
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/aidhp-avatar.git
    ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+2. Go to aidhp-avatar/code/src/ and open command prompt in this path and run below commands
+```sh
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+```
+3. Install dependencies
+```sh
+pip install -r requirements.txt
+```
+
+4. Download NLTK data
+```sh
+python -m nltk.downloader vader_lexicon
+```
+
+5. Launch service
+```sh
+uvicorn app:app --reload
+```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Framework: Uvicorn
+- 🔹 Backend: FastAPI
+- 🔹 Other: ML Models (Scikit-learn, Sentence-Transformers), NLP (NLTK, HuggingFace Transformers), Fairness	(AIF360, Fairlearn)
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Ganesh Patnala** - [https://github.com/syampatnala007](#)
+- **Tilak Kalyan**
+- **Syam Kumar**
+- **Anil Kumar**
