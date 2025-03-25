@@ -26,7 +26,7 @@ Our system leverages machine learning and natural language processing (NLP) to:
 
 ✅ *Explain* recommendations in natural language for transparency
 
-# ✨ Key Features
+### ✨ Key Features
 
 - **Hybrid Recommendation Engine**
   - Combines Gradient Boosting with Transformer embeddings
@@ -40,11 +40,8 @@ Our system leverages machine learning and natural language processing (NLP) to:
 
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+ 
 
-![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.
