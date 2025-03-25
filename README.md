@@ -49,18 +49,16 @@ Delivers API endpoints for easy integration
 
 ## 🛠️ How We Built It
 Core Architecture
-Data Pipeline
+1. Data Pipeline
 
-Automated loading/cleaning of multiple data sources
+- Automated loading/cleaning of multiple data sources
 
-Advanced feature engineering (numeric, categorical, text)
+- Advanced feature engineering (numeric, categorical, text)
 
-Sentiment analysis integration
+- Sentiment analysis integration
 
-Hybrid Recommendation Engine
-
-mermaid
-Copy
+2. Hybrid Recommendation Engine
+```sh
 graph TD
   A[Customer Data] --> B[Feature Engineering]
   B --> C[Gradient Boosting Classifier]
@@ -68,13 +66,14 @@ graph TD
   D --> C
   C --> E[Calibration]
   E --> F[Recommendations]
-Fairness Monitoring
+```
+3. Fairness Monitoring
 
-Continuous bias detection
+- Continuous bias detection
 
-Protected attribute analysis
+- Protected attribute analysis
 
-Recommendation auditing
+- Recommendation auditing
 
 ## 🚧 Challenges We Faced
 ### 1. Data Imbalance
