@@ -25,6 +25,25 @@ A brief overview of your project and its purpose. Mention which problem statemen
 
 ## 💡 Inspiration
 What inspired you to create this project? Describe the problem you're solving.
+Our hyper-personalized recommendation system analyzes customer profiles, transaction histories, and social media sentiment to:
+
+Suggest tailored financial products (loans, investments, credit cards)
+
+Calculate individual risk profiles (High/Medium/Low)
+
+Detect potential biases in recommendations
+
+Provide natural language explanations for each suggestion
+
+Key features:
+
+Processes both structured (income, age) and unstructured data (social media posts)
+
+Combines traditional ML with transformer-based embeddings
+
+Adapts to severe class imbalances in the data
+
+Delivers API endpoints for easy integration
 
 ## ⚙️ What It Does
 Explain the key features and functionalities of your project.
