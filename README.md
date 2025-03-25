@@ -51,11 +51,11 @@ Delivers API endpoints for easy integration
 Core Architecture
 1. Data Pipeline
 
-- Automated loading/cleaning of multiple data sources
+ - Automated loading/cleaning of multiple data sources
 
-- Advanced feature engineering (numeric, categorical, text)
+ - Advanced feature engineering (numeric, categorical, text)
 
-- Sentiment analysis integration
+ - Sentiment analysis integration
 
 2. Hybrid Recommendation Engine
 ```sh
@@ -69,11 +69,11 @@ graph TD
 ```
 3. Fairness Monitoring
 
-- Continuous bias detection
+ - Continuous bias detection
 
-- Protected attribute analysis
+ - Protected attribute analysis
 
-- Recommendation auditing
+ - Recommendation auditing
 
 ## 🚧 Challenges We Faced
 ### 1. Data Imbalance
